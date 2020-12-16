@@ -31,14 +31,13 @@ function load_fan() {
 },2500);
 }
 
-function load_binloader() {
-    msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'> 正在加载 Bin Loader ...</h1>";
-    setTimeout(function(){
-    LoadedMSG="发送 bin格式插件(payload) 到端口 9021, <br>请等待 左上角, 出现2次 以上 跳窗并等待跳窗结束再操作";
+function load_702() {
+    msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'> 正在加载 702jb ...</h1>";
+    jbver = document.getElementById("jb_ver").value;
+    if(jbver ==""){return 0;}
+    LoadedMSG="使用"+ jbver + "破解成功 ";
+        runScripts([ './common/'+jbver+'_jailbreak.js', './common/'+jbver+'_loadcode.js'], done);
 
-    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
-    document.getElementsByTagName('head')[0].appendChild(binload);
-},2500);
 }
 function load_ftp() {
     msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'> 正在加载 FTP ...</h1>";

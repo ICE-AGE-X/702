@@ -217,7 +217,7 @@
                     <td>
                     
                     <div class="oneclick">
-                            <button id="oneclick" class="dropbtn diy-btn" type="button" onclick="load_binloader(); return false" value="jb">jailbreak</button>
+                            <button id="oneclick" class="dropbtn diy-btn" type="button" onclick="load_702(); return false" value="jb">jailbreak</button>
                             <div class="dropdown diy-dropdown">
                             <button  id="pl_switch" class="diy-drop">▶</button>
                             <div class="dropdown-content diy-dropdown-content ">
@@ -351,15 +351,16 @@
 
 	}
 
-	
+	window.postExploit = function()
+	{
+	    runScripts(['common/702.js'], done);
+	};
 	function change_oneclick(idx,name,val){
 	document.getElementById(idx).innerHTML=name;
 	document.getElementById(idx).value=val;
 	localStorage.setItem(idx+"Name", name);
 	localStorage.setItem(idx+"VAL", val);
 	};
-document.getElementById("oneclick").style.display='block';
-document.getElementById("pl_switch").style.display='block';
 	function colorSwitch(btns){
 	if (btns != null)
 	{themeIdx=themeIdx+1;}
@@ -385,16 +386,16 @@ document.getElementById("pl_switch").style.display='block';
 	var Value = null;
 
 	</script>
-    </script>
 	<script src="common/utils.js"></script>
-	<script src="common/external/int64.js"></script>
-	<script src="common/external/ps4.js"></script>
+	<script src="common/int64.js"></script>
+	<script src="common/ps4.js"></script>
 	<button id="input1" style="display: none" onfocus="handle2()"></button>
 	<button id="input2" style="display: none"></button>
 	<button id="input3" style="display: none" onfocus="handle2()"></button>
 	<select id="select1" style="display: none">
 	<option value="value1" style="display: none">Value1</option>
 	</select>
+
     </body>
 
 </html>
