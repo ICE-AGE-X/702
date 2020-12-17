@@ -60,12 +60,6 @@
                         <a href="javascript:void(0);" onclick="load_ftp(); return false">
                             FTP
                         </a>
-                        <a href="javascript:void(0);" onclick="load_todex(); return false">
-                            toDEX
-                        </a>
-                        <a href="javascript:void(0);" onclick="load_binloader(); return false">
-                            Bin Loader
-                        </a>
                         <a href="javascript:void(0);" onclick="load_dumper(); return false">
                             Dumper
                         </a>
@@ -124,23 +118,6 @@
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        金手指
-                        </br>
-                        Save Mounter
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="javascript:void(0);" onclick="load_webrte(); return false">
-                            WebRTE
-                        </a>
-                        <a href="javascript:void(0);" onclick="load_debug(); return false">
-                            Debug(待测试)
-                            </br>
-                            修改器/存档解密
-                        </a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">
                         数据备份
                         <br>
                         更新开关
@@ -169,29 +146,10 @@
                         <a href="javascript:void(0);" onclick="load_kerneldump(); return false">
                             内核 Dumper
                         </a>
-                        <a href="javascript:void(0);" onclick="load_linux(); return false">
-                            Linux
-                        </a>
                         <a href="javascript:void(0);" onclick="load_app2usb(); return false">
                             App2USB
                         </a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <div class="dropdown-content top">
-                        
-                        
-                        <a href="./cache.html">
-                            (点我)开启
-                            <br/>
-                            离线缓存
-                        </a>
-                        <hr/>
-                        <img src="http://wxpusher.zjiecode.com/api/qrcode/i7UEkP2ld5rtOhbOHtUCI17p7nxGaQcEPUbwjoIzQecNQCfPIVOEdMkptk14xEyK.jpg" width="150px" />
-                    </div>
-                    <button class="cache dropbtn">
-                        离线缓存
-                    </button>
                 </div>
             </div>
         </div>
@@ -218,19 +176,6 @@
                     
                     <div class="oneclick">
                             <button id="oneclick" class="dropbtn diy-btn" type="button" onclick="load_702(); return false" value="jb">jailbreak</button>
-                            <div class="dropdown diy-dropdown">
-                            <button  id="pl_switch" class="diy-drop">▶</button>
-                            <div class="dropdown-content diy-dropdown-content ">
-                                    <table>
-                                        <tr>
-                                        <td vAlign=top>
-   
-                                        </td>
-                                        </tr>
-                                    </table>
-                            </div>
-                            </div>
-                        </div>
                     </td>
                 </tr>
                         
@@ -243,62 +188,6 @@
         
 
    
-        <div class="tablebody">
-        
-        
-        
-            <div class="c2l">
-                <table class="table_btn">
-                	<tr>
-                	<td>
-                    <h3>Loader版本</h3>
-                   </td>
- 						</tr>
- 						<tr>
-						 <td>
-                   <div class="oneclick">
-                            <button id="loader" class="dropbtn diy-btn" type="button" value="def">默认 loader</button>
-                            <div class="dropdown diy-dropdown">
-                            <button  id="other_switch" class="diy-drop">▶</button>
-                            <div class="dropdown-content diy-dropdown-content bottom">
-
-                            </div>
-                            </div>
-                        </div>
-                   
-                </td>
-                </tr>
-                </table>
-                </div>
-                <div>
-                    <a href="./info.html">破解选项说明</a>
-                </div>
-                <div class="c2r">
-                <table class="table_btn">
-                   <tr>
-                   
-                <td>	
-						<h3>破解版本</h3>
-						</td>
-						</tr>
-						 <tr>
-                <td>
-                    <div class="oneclick">
-                            <button id="jb_ver" class="dropbtn diy-btn" type="button" value="702">702</button>
-                            <div class="dropdown diy-dropdown">
-                            <button  id="other_switch" class="diy-drop">▶</button>
-                            <div class="dropdown-content diy-dropdown-content bottom">
-                                         <a href="javascript:void(0);" onclick="change_oneclick('jb_ver','702','702');">702</a>
-                                      
-                            </div>
-                            </div>
-                        </div>
-              
-                </td>
-                </tr>
-                </table>
-            </div>
-        </div>
         <div class="tablebody">
             <div class="tables">
                 <h3 class="noted">
@@ -389,11 +278,11 @@
 	<script src="common/utils.js"></script>
 	<script src="common/int64.js"></script>
 	<script src="common/ps4.js"></script>
-	<button id="input1" style="display: none" onfocus="handle2()"></button>
-	<button id="input2" style="display: none"></button>
-	<button id="input3" style="display: none" onfocus="handle2()"></button>
-	<select id="select1" style="display: none">
-	<option value="value1" style="display: none">Value1</option>
+	<button id="input1" onfocus="handle2()"></button>
+	<button id="input2" ></button>
+	<button id="input3" onfocus="handle2()"></button>
+	<select id="select1" >
+	<option value="value1">Value1</option>
 	</select>
 
     </body>

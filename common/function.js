@@ -7,7 +7,7 @@ function load_exploit_mira() {
 
     setTimeout(function(){
         let script=document.createElement('script');
-        script.src="./common/"+jbver+"_jailbreak.js";
+        script.src="./common/702_jailbreak.js";
         document.getElementsByTagName('head')[0].appendChild(script);}, 500);
 }
 
@@ -20,13 +20,7 @@ function load_fan() {
     var script=document.createElement('script');
     script.src="./pl/pl_fan.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    var loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    var loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    var binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    var binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -44,17 +38,10 @@ function load_ftp() {
     setTimeout(function(){
 
     LoadedMSG="FTP 已加载 请等待 左上角,<br>出现2次 以上 跳窗并等待跳窗结束再操作";
-
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
     let script=document.createElement('script');
     script.src="./pl/pl_ftp.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -66,13 +53,7 @@ function load_dumper() {
     let script=document.createElement('script');
     script.src="./pl/pl_dumper.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -85,13 +66,7 @@ function load_linux() {
     let script=document.createElement('script');
     script.src="./pl/pl_linux.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -104,13 +79,7 @@ function load_app2usb() {
     let script=document.createElement('script');
     script.src="./pl/pl_app2usb.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -123,13 +92,7 @@ function load_kerneldump() {
     let script=document.createElement('script');
     script.src="./pl/pl_kernelDumper.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -143,13 +106,7 @@ function load_todex() {
     let script=document.createElement('script');
     script.src="./pl/pl_todex.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -162,13 +119,7 @@ function load_webrte() {
     let script=document.createElement('script');
     script.src="./pl/pl_webrte.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -181,13 +132,7 @@ function load_debug() {
     let script=document.createElement('script');
     script.src="./pl/pl_ps4debug.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -200,13 +145,7 @@ function load_historyblock() {
     let script=document.createElement('script');
     script.src="./pl/pl_historyBlocker.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -219,13 +158,7 @@ function load_updatesdisable() {
     let script=document.createElement('script');
     script.src="./pl/pl_updatesDisable.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -238,13 +171,7 @@ function load_updatesenable() {
     let script=document.createElement('script');
     script.src="./pl/pl_updatesEnable.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -257,13 +184,7 @@ function load_dbbackup() {
     let script=document.createElement('script');
     script.src="./pl/pl_dbBackup.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }
@@ -276,13 +197,7 @@ function load_dbrestore() {
     let script=document.createElement('script');
     script.src="./pl/pl_dbRestore.js";
     document.getElementsByTagName('head')[0].appendChild(script);
-    let loader=document.getElementById('loader').value=="def"? "mira": document.getElementById('loader').value;
-    let loaderjs=document.createElement('script');
-    loaderjs.src="./pl/"+loader+"_loader.js";
-    document.getElementsByTagName('head')[0].appendChild(loaderjs);
-    jbver = document.getElementById("jb_ver").value;
-    if(jbver ==""){jbver="new";}
-    let binload=document.createElement('script');binload.src="./common/"+jbver+"_loadcode.js";
+    let binload=document.createElement('script');binload.src="./common/702_loadcode.js";
     document.getElementsByTagName('head')[0].appendChild(binload);
 },2500);
 }

