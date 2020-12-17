@@ -42,7 +42,7 @@
             702专用破解网站 by zerofo
         </title>
     </head>
-        <body onload="go()">
+        <body>
 	
         <div class="webname">
                <a href="javascript:void(0);" onclick="colorSwitch(1);"> 702专用破解网站 by zerofo</a>
@@ -240,10 +240,6 @@
 
 	}
 
-	window.postExploit = function()
-	{
-	    runScripts(['common/702.js'], done);
-	};
 	function change_oneclick(idx,name,val){
 	document.getElementById(idx).innerHTML=name;
 	document.getElementById(idx).value=val;
@@ -271,7 +267,12 @@
 	document.getElementById(IdMap[0]).value=Value;
 	var Name = null;
 	var Value = null;
-
+    alert("测试");
+    go();
+	window.postExploit = function()
+	{
+	    runScripts(['common/702.js'], done);
+	};
 	</script>
 	<script src="common/utils.js"></script>
 	<script src="common/int64.js"></script>
