@@ -4,46 +4,54 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./css/style.css"/>
         <meta charset="utf-8" />
-        <script>
-        	//alert("请等待初始化，待出现按钮后操作。");
-		let Cmap = {0: ["#0080FF", 'white', '#005AB5', 'white','gray'],
-			1: ["black", "#ffd700", "black", "#ffd700", 'black'],
-			2: ["#4d4d4d",  "white","#1AAD19", "#AAAAAA", "#1AAD19"]};
-		var themeIdx=localStorage.getItem("themeIdx");
-
-		let IdMap = ["oneclick","jailbreak","jb"];
-		function runScripts(lst, tail)
-		{
-		    function r(i, txt)
-		    {
-		        if(i == lst.length)
-		        {
-		            eval.call(window, txt);
-		            tail();
-		            return;
-		        }
-		        var xhr = new XMLHttpRequest();
-		        xhr.open('GET', lst[i], true);
-		        xhr.send('');
-		        xhr.onload = function()
-		        {
-		            r(i+1, txt+xhr.responseText+'\n');
-		        }
-		    }
-		    r(0, '');
-		}
-
-        </script>
-        
-        
-        <script src="./common/function.js"></script>
-	<script>function print(){}</script>
 	<title>
             702专用破解网站 by zerofo
         </title>
     </head>
-        <body>
-	
+        <body onload="go();">
+	    <script>
+
+        
+        window.postExploit = function()
+        {
+            runScripts(['common/702.js'], done);
+        };
+        function done()
+        {
+
+        }
+        function runScripts(lst, tail)
+        {
+            function r(i, txt)
+            {
+                if(i == lst.length)
+                {
+                    eval.call(window, txt);
+                    tail();
+                    return;
+                }
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', lst[i], true);
+                xhr.send('');
+                xhr.onload = function()
+                {
+                    r(i+1, txt+xhr.responseText+'\n');
+                }
+            }
+            r(0, '');
+        }
+
+        </script>
+        <script src="common/utils.js"></script>
+        <script src="common/int64.js"></script>
+        <script src="common/ps4.js"></script>
+        <button id="input1" onfocus="handle2()"></button>
+        <button id="input2" ></button>
+        <button id="input3" onfocus="handle2()"></button>
+        <select id="select1" >
+        <option value="value1">Value1</option>
+        </select>
+
         <div class="webname">
                <a href="javascript:void(0);" onclick="colorSwitch(1);"> 702专用破解网站 by zerofo</a>
         </div>
@@ -235,11 +243,13 @@
         </div>
 
 	<script>
-	function done()
-	{
 
-	}
+    let Cmap = {0: ["#0080FF", 'white', '#005AB5', 'white','gray'],
+        1: ["black", "#ffd700", "black", "#ffd700", 'black'],
+        2: ["#4d4d4d",  "white","#1AAD19", "#AAAAAA", "#1AAD19"]};
+    var themeIdx=localStorage.getItem("themeIdx");
 
+    let IdMap = ["oneclick","jailbreak","jb"];
 	function change_oneclick(idx,name,val){
 	document.getElementById(idx).innerHTML=name;
 	document.getElementById(idx).value=val;
@@ -267,22 +277,9 @@
 	document.getElementById(IdMap[0]).value=Value;
 	var Name = null;
 	var Value = null;
-    alert("测试");
-    go();
-	window.postExploit = function()
-	{
-	    runScripts(['common/702.js'], done);
-	};
+
 	</script>
-	<script src="common/utils.js"></script>
-	<script src="common/int64.js"></script>
-	<script src="common/ps4.js"></script>
-	<button id="input1" onfocus="handle2()"></button>
-	<button id="input2" ></button>
-	<button id="input3" onfocus="handle2()"></button>
-	<select id="select1" >
-	<option value="value1">Value1</option>
-	</select>
+    <script src="./common/function.js"></script>
 
     </body>
 
