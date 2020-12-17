@@ -11,7 +11,7 @@
 			2: ["#4d4d4d",  "white","#1AAD19", "#AAAAAA", "#1AAD19"]};
 		var themeIdx=localStorage.getItem("themeIdx");
 
-		let IdMap = [["oneclick","jailbreak","jb"], ["loader","默认 loader","def"], ["jb_ver","702","702"]];
+		let IdMap = ["oneclick","jailbreak","jb"];
 		function runScripts(lst, tail)
 		{
 		    function r(i, txt)
@@ -264,13 +264,11 @@
 	if (themeIdx==null){themeIdx=0;}
 
 	colorSwitch();
-	for (let i = 0; i < 3; i++) {
-	var Name=localStorage.getItem(IdMap[i][0]+"Name");
-	var Value=localStorage.getItem(IdMap[i][0]+"VAL");
-	if (Name==null||Value==null){Name=IdMap[i][1]; Value=IdMap[i][2];}
-	document.getElementById(IdMap[i][0]).innerHTML=Name;
-	document.getElementById(IdMap[i][0]).value=Value;
-	};
+	var Name=localStorage.getItem(IdMap[0]+"Name");
+	var Value=localStorage.getItem(IdMap[0]+"VAL");
+	if (Name==null||Value==null){Name=IdMap[1]; Value=IdMap[2];}
+	document.getElementById(IdMap[0]).innerHTML=Name;
+	document.getElementById(IdMap[0]).value=Value;
 	var Name = null;
 	var Value = null;
 
